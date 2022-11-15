@@ -1,27 +1,39 @@
 body {
-  background-color: #f2f4f3;
+  background-color: #f2f4f3 !important;
 }
 
 h1 {
   font-family: "Merriweather", serif;
   color: #221d23;
   padding-bottom: 16px;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1rem;
+  font-weight: 200;
+  color: #4c414e;
 }
 
 h2,
-h3 {
+h4 {
   padding-bottom: 8px;
 }
 
 h2,
-h3,
+h4,
 p {
   font-family: "Roboto", sans-serif;
   color: #4c414e;
 }
 
 .hero {
+  background-color: rgba(255, 255, 255, 0.2);
+  max-width: 480px;
   margin: 256px auto;
   text-align: center;
-  max-width: 400px;
+  padding: 40px;
 }
