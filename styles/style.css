@@ -38,3 +38,27 @@ p {
   text-align: center;
   padding: 40px;
 }
+
+.foreground-decoration {
+  background-color: #bfc6a9;
+  display: block;
+  height: 100%;
+  width: 80px;
+  position: fixed;
+  padding: 100% 20px;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+}
+
+.background-decoration {
+  background-color: #707a52;
+  display: block;
+  height: 100%;
+  width: 50px;
+  position: fixed;
+  padding: 100% 20px;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+}
