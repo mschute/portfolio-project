@@ -33,16 +33,25 @@ p {
   color: #4c414e;
 }
 
-@media {
-}
-
 .hero {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   max-width: 460px;
   width: 46%;
-  margin: 256px auto;
+  margin: 50px auto;
   padding: 3% 2%;
+}
+
+.background-decoration {
+  background-color: #707a52;
+  display: block;
+  height: 100%;
+  max-width: 50px;
+  width: 5%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
 }
 
 .foreground-decoration {
@@ -57,14 +66,16 @@ p {
   overflow-x: hidden;
 }
 
-.background-decoration {
-  background-color: #707a52;
+.project-summary title {
+  display: inline;
+}
+
+.project-summary-left {
   display: block;
-  height: 100%;
-  max-width: 50px;
-  width: 5%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  overflow-x: hidden;
+}
+
+#weather-app {
+  max-width: 242px;
+  border: solid 2px #707a52;
+  box-shadow: 10px 5px 20px rgba(112, 122, 82, 0.3);
 }
