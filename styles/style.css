@@ -1,11 +1,13 @@
 body {
-  background-color: #f2f4f3 !important;
+  background-color: #f2f4f3;
   text-align: center;
 }
 
 h1 {
   font-family: "Merriweather", serif;
   color: #221d23;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 16px;
   font-size: 3rem;
   text-align: center;
@@ -14,6 +16,7 @@ h1 {
 h2 {
   font-size: 2rem;
 }
+
 h4 {
   font-size: 1rem;
   font-weight: 200;
@@ -33,13 +36,10 @@ p {
   color: #4c414e;
 }
 
-.hero {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
-  max-width: 460px;
-  width: 46%;
-  margin: 50px auto;
-  padding: 3% 2%;
+.container-content {
+  max-width: 80%;
+  margin: 0px auto;
+  text-align: center;
 }
 
 .background-decoration {
@@ -54,6 +54,10 @@ p {
   overflow-x: hidden;
 }
 
+.fas {
+  padding-right: 5px;
+}
+
 .foreground-decoration {
   background-color: #bfc6a9;
   display: block;
@@ -64,6 +68,91 @@ p {
   top: 0;
   right: 0;
   overflow-x: hidden;
+}
+
+.hero {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  max-width: 460px;
+  width: 46%;
+  margin: 1% auto;
+}
+
+.icon {
+  display: inline;
+  text-align: center;
+}
+
+.logo {
+  max-width: 48px;
+  margin-bottom: 88px;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  max-width: 200px;
+  min-width: 120px;
+  width: 8%;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+}
+
+.navbar-item {
+  color: #4c414e;
+  padding: 20px 0px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    min-width: none;
+    max-width: none;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .icon {
+    display: block;
+  }
+  .fas {
+    padding-right: 0px;
+  }
+  .logo {
+    padding-right: 20px;
+  }
+
+  .navbar-link {
+    float: left;
+    padding: 10px;
+  }
+
+  .navbar-item {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  /* Collapse navigation into a hamburger menu */
+  /* Alight hamburger menu right */
+  /* Click on hamburger menu */
+}
+
+.navbar-item a {
+  display: block;
+  color: #4c414e;
+  text-decoration: none;
+}
+
+.navbar-link {
+  text-align: center;
+}
+.navbar-logo {
+  text-align: left;
 }
 
 .project-summary title {

@@ -9,12 +9,12 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto"
     />
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
-    />
+    /> -->
     <script
       src="https://kit.fontawesome.com/003f2de4b7.js"
       crossorigin="anonymous"
@@ -25,32 +25,78 @@
   <body>
     <div class="foreground-decoration"></div>
     <div class="background-decoration"></div>
-    <div class="hero">
-      <h1>Marta Unterschute</h1>
-      <h2>Front-end Developer</h2>
-      <h4>London, UK</h4>
-    </div>
-    <div class="project-summary-left container">
-      <div class="row">
-        <div class="col-sm-4">
-          <img
-            src="img/Weather-app.png"
-            alt="Weather App Preview"
-            id="weather-app"
-          />
-        </div>
-        <div class="col-sm-8">
-          <h5 class="project-summary-title">Date – Name (link)</h5>
-          <h5 class="project-summary-title">What was used to create project</h5>
-          <p class="project-summary-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+    <ul class="navbar">
+      <li class="navbar-item">
+        <a class="navbar-link" href="index.html"
+          ><img
+            src="img/temp-logo.png"
+            alt="Marta Unterschute logo"
+            class="logo"
+        /></a>
+      </li>
+      <li class="navbar-item">
+        <a class="navbar-link" href="#">
+          <div class="icon">
+            <i class="fas fa-address-card"></i>
+          </div>
+          About
+        </a>
+      </li>
+      <li class="navbar-item">
+        <a class="navbar-link" href="#">
+          <div class="icon">
+            <i class="fas fa-book-open"></i>
+          </div>
+          Portfolio
+        </a>
+      </li>
+      <li class="navbar-item">
+        <a class="navbar-link" href="#">
+          <div class="icon">
+            <i class="fas fa-quote-right"></i>
+          </div>
+          Testimonials
+        </a>
+      </li>
+      <li class="navbar-item">
+        <a class="navbar-link" href="#">
+          <div class="icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          Contact
+        </a>
+      </li>
+    </ul>
+    <div class="container-content">
+      <div class="hero">
+        <h1>Marta Unterschute</h1>
+        <h2>Front-end Developer</h2>
+        <h4>London, UK</h4>
+      </div>
+      <div class="project-summary-left container">
+        <div class="row">
+          <div>
+            <img
+              src="img/Weather-app.png"
+              alt="Weather App Preview"
+              id="weather-app"
+            />
+          </div>
+          <div>
+            <h5 class="project-summary-title">Date – Name (link)</h5>
+            <h5 class="project-summary-title">
+              What was used to create project
+            </h5>
+            <p class="project-summary-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
         </div>
       </div>
     </div>
