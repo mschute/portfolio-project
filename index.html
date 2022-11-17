@@ -19,6 +19,7 @@
       src="https://kit.fontawesome.com/003f2de4b7.js"
       crossorigin="anonymous"
     ></script>
+    <script src="app.js"></script>
 
     <title>Marta Unterschute's Front-end Developer Portfolio</title>
   </head>
@@ -34,38 +35,49 @@
             class="logo"
         /></a>
       </li>
-      <li class="navbar-item">
-        <a class="navbar-link" href="#">
-          <div class="icon">
-            <i class="fas fa-address-card"></i>
-          </div>
-          About
+        <li class="navbar-item navbar-option">
+          <a class="navbar-link" href="#">
+            <div class="icon">
+              <i class="fas fa-address-card"></i>
+            </div>
+            About
+          </a>
+        </li>
+        <li class="navbar-item navbar-option">
+          <a class="navbar-link" href="#">
+            <div class="icon">
+              <i class="fas fa-book-open"></i>
+            </div>
+            Portfolio
+          </a>
+        </li>
+        <li class="navbar-item navbar-option">
+          <a class="navbar-link" href="#">
+            <div class="icon">
+              <i class="fas fa-quote-right"></i>
+            </div>
+            Testimonials
+          </a>
+        </li>
+        <li class="navbar-item navbar-option">
+          <a class="navbar-link" href="#">
+            <div class="icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            Contact
+          </a>
+        </li>
+      </div>
+            <div class="dropdown">
+        <a onclick="myFunction()" class="drop-link">
+          <i class="fas fa-solid fa-bars"></i>
         </a>
-      </li>
-      <li class="navbar-item">
-        <a class="navbar-link" href="#">
-          <div class="icon">
-            <i class="fas fa-book-open"></i>
-          </div>
-          Portfolio
-        </a>
-      </li>
-      <li class="navbar-item">
-        <a class="navbar-link" href="#">
-          <div class="icon">
-            <i class="fas fa-quote-right"></i>
-          </div>
-          Testimonials
-        </a>
-      </li>
-      <li class="navbar-item">
-        <a class="navbar-link" href="#">
-          <div class="icon">
-            <i class="fas fa-envelope"></i>
-          </div>
-          Contact
-        </a>
-      </li>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">About</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Testimonials</a>
+          <a href="#">Contact</a>
+        </div>
     </ul>
     <div class="container-content">
       <div class="hero">
