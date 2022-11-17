@@ -5,9 +5,7 @@ body {
 h1 {
   font-family: "Merriweather", serif;
   color: #221d23;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 16px;
+  padding: 16px;
   font-size: 3rem;
   text-align: center;
 }
@@ -53,7 +51,6 @@ p {
   overflow-x: hidden;
 }
 
-/* Dropdown Button */
 .fa-bars {
   color: #4c414e;
   font-size: 24px;
@@ -61,13 +58,11 @@ p {
   cursor: pointer;
 }
 
-/* Dropdown button on hover & focus */
 .fa-bars:hover,
 .fa-bars:focus {
   color: #221d23;
 }
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
   display: none;
@@ -76,7 +71,6 @@ p {
   padding-top: 10px;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: fixed;
@@ -87,7 +81,6 @@ p {
   right: 10%;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
   color: #4c414e;
   padding: 12px 16px;
@@ -95,13 +88,11 @@ p {
   display: block;
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #bfc6a9;
   color: #221d23;
 }
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
   display: block;
 }
@@ -124,6 +115,7 @@ p {
 
 .hero {
   background-color: rgba(255, 255, 255, 0.2);
+  width: 70%;
   border-radius: 8px;
   margin: 0px auto;
 }
@@ -160,18 +152,25 @@ p {
   .navbar {
     min-width: none;
     max-width: none;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     padding-left: 10px;
     width: 100%;
     height: auto;
     position: relative;
   }
+
+  .hero {
+    width: 95%;
+  }
+
   .icon {
     display: block;
   }
+
   .fas {
     padding-right: 0px;
   }
+
   .logo {
     padding-right: 20px;
   }
@@ -187,8 +186,24 @@ p {
 }
 
 @media screen and (max-width: 460px) {
+  .background-decoration {
+    display: none;
+  }
+
+  .container-content {
+    width: 100%;
+  }
+
   .dropdown {
     display: inline-block;
+  }
+
+  .foreground-decoration {
+    display: none;
+  }
+
+  .hero {
+    width: 100%;
   }
 
   .navbar-option {
