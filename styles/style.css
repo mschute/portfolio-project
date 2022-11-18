@@ -3,7 +3,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover a:focus {
   color: #707a52;
   text-decoration: none;
   font-weight: bolder;
@@ -65,21 +65,7 @@ p {
   margin: 0px auto;
 }
 
-.flex-container {
-  display: flex;
-}
-
-.flex-child {
-  flex: content;
-  justify-content: center;
-}
-
-.flex-child:first-child {
-  margin-right: 40px;
-  margin-left: 60px;
-}
-
-.background-decoration {
+.decoration-background {
   background-color: #707a52;
   display: block;
   height: 100%;
@@ -91,16 +77,41 @@ p {
   overflow-x: hidden;
 }
 
+.decoration-foreground {
+  background-color: #bfc6a9;
+  display: block;
+  height: 100%;
+  max-width: 80px;
+  width: 8%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+}
+
 .fa-bars {
   color: #4c414e;
   font-size: 24px;
-  border: none;
   cursor: pointer;
 }
 
 .fa-bars:hover,
 .fa-bars:focus {
   color: #221d23;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-child {
+  flex: content;
+  justify-content: center;
+}
+
+.flex-child:first-child {
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
 .dropdown {
@@ -128,12 +139,13 @@ p {
   display: block;
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover,
+.dropdown-content a:focus {
   background-color: #bfc6a9;
   color: #221d23;
 }
 
-.show {
+.dropdown-display {
   display: block;
 }
 
@@ -143,18 +155,6 @@ p {
 
 .flex-container {
   margin-bottom: 40px;
-}
-
-.foreground-decoration {
-  background-color: #bfc6a9;
-  display: block;
-  height: 100%;
-  max-width: 80px;
-  width: 8%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  overflow-x: hidden;
 }
 
 .hero {
@@ -211,7 +211,6 @@ p {
 
 .portfolio-image {
   max-width: 280px;
-  justify-content: right;
   border: solid 2px #707a52;
   box-shadow: 10px 5px 20px rgba(112, 122, 82, 0.3);
 }
@@ -262,13 +261,8 @@ p {
 }
 
 @media screen and (max-width: 700px) {
-  .navbar {
-    min-width: none;
-    max-width: none;
-    padding-left: 10px;
-    width: 100%;
-    height: auto;
-    position: relative;
+  .fas {
+    padding-right: 0px;
   }
 
   .hero {
@@ -279,21 +273,26 @@ p {
     display: block;
   }
 
-  .fas {
-    padding-right: 0px;
-  }
-
   .logo {
     padding-right: 20px;
+  }
+
+  .navbar {
+    min-width: none;
+    max-width: none;
+    padding-left: 10px;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .navbar-item {
+    display: inline;
   }
 
   .navbar-link {
     float: left;
     padding: 10px;
-  }
-
-  .navbar-item {
-    display: inline;
   }
 }
 
