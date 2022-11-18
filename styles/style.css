@@ -130,6 +130,10 @@ p {
   padding-right: 5px;
 }
 
+.flex-container {
+  margin-bottom: 40px;
+}
+
 .foreground-decoration {
   background-color: #bfc6a9;
   display: block;
@@ -191,18 +195,29 @@ p {
   text-align: left;
 }
 
-#weather-app {
+.portfolio-image {
   max-width: 280px;
   justify-content: right;
   border: solid 2px #707a52;
   box-shadow: 10px 5px 20px rgba(112, 122, 82, 0.3);
 }
 
+.project-summary-right {
+  text-align: right;
+}
+
 @media screen and (max-width: 840px) {
   .flex-container {
-    display: block;
     width: 80%;
-    margin: 0px auto;
+    margin: 0px auto 40px;
+  }
+
+  .project-one {
+    flex-direction: column;
+  }
+
+  .project-two {
+    flex-direction: column-reverse;
   }
 
   .flex-child {
@@ -218,10 +233,6 @@ p {
     max-width: 100%;
   }
 
-  text {
-    order: 2;
-  }
-
   .project-summary-title {
     text-align: center;
   }
@@ -230,10 +241,9 @@ p {
     text-align: center;
   }
 
-  #weather-app {
+  .portfolio-image {
     max-width: 100%;
     margin-bottom: 20px;
-    order: 1;
   }
 }
 
@@ -241,7 +251,6 @@ p {
   .navbar {
     min-width: none;
     max-width: none;
-    /* padding-top: 10px; */
     padding-left: 10px;
     width: 100%;
     height: auto;
