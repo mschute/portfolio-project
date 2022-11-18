@@ -1,3 +1,14 @@
+a {
+  color: #221d23;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #707a52;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
 body {
   background-color: #f2f4f3;
 }
@@ -161,7 +172,6 @@ p {
 
 .logo {
   max-width: 48px;
-  /* margin-bottom: 88px; */
 }
 
 .navbar {
@@ -177,7 +187,6 @@ p {
 }
 
 .navbar-item {
-  color: #4c414e;
   padding: 20px 0px;
   text-decoration: none;
 }
@@ -186,6 +195,11 @@ p {
   display: block;
   color: #4c414e;
   text-decoration: none;
+}
+
+.navbar-item a:hover {
+  color: #221d23;
+  font-weight: bold;
 }
 
 .navbar-link {
