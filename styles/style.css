@@ -3,7 +3,8 @@ a {
   text-decoration: none;
 }
 
-a:hover a:focus {
+a:hover,
+a:focus {
   color: #707a52;
   text-decoration: none;
   font-weight: bolder;
