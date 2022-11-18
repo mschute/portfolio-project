@@ -39,13 +39,33 @@ p {
 
 h5 {
   font-family: "Roboto", sans-serif;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+p {
+  line-height: 22px;
 }
 
 .container-content {
   max-width: 80%;
   padding-top: 96px;
   margin: 0px auto;
-  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-child {
+  flex: content;
+  justify-content: center;
+}
+
+.flex-child:first-child {
+  margin-right: 40px;
+  margin-left: 60px;
 }
 
 .background-decoration {
@@ -158,6 +178,65 @@ h5 {
   text-decoration: none;
 }
 
+.navbar-item a {
+  display: block;
+  color: #4c414e;
+  text-decoration: none;
+}
+
+.navbar-link {
+  text-align: center;
+}
+.navbar-logo {
+  text-align: left;
+}
+
+#weather-app {
+  max-width: 280px;
+  justify-content: right;
+  border: solid 2px #707a52;
+  box-shadow: 10px 5px 20px rgba(112, 122, 82, 0.3);
+}
+
+@media screen and (max-width: 840px) {
+  .flex-container {
+    display: block;
+    width: 80%;
+    margin: 0px auto;
+  }
+
+  .flex-child {
+    flex: none;
+  }
+
+  .flex-child:first-child {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .image {
+    max-width: 100%;
+  }
+
+  text {
+    order: 2;
+  }
+
+  .project-summary-title {
+    text-align: center;
+  }
+
+  .project-summary-description {
+    text-align: center;
+  }
+
+  #weather-app {
+    max-width: 100%;
+    margin-bottom: 20px;
+    order: 1;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .navbar {
     min-width: none;
@@ -219,31 +298,4 @@ h5 {
   .navbar-option {
     display: none;
   }
-}
-
-.navbar-item a {
-  display: block;
-  color: #4c414e;
-  text-decoration: none;
-}
-
-.navbar-link {
-  text-align: center;
-}
-.navbar-logo {
-  text-align: left;
-}
-
-.project-summary title {
-  display: inline;
-}
-
-.project-summary-left {
-  display: block;
-}
-
-#weather-app {
-  max-width: 242px;
-  border: solid 2px #707a52;
-  box-shadow: 10px 5px 20px rgba(112, 122, 82, 0.3);
 }
