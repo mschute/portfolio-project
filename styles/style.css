@@ -1,6 +1,7 @@
 a {
   color: #221d23;
   text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
 
 a:hover,
@@ -177,8 +178,8 @@ p {
 
 .navbar {
   list-style-type: none;
-  max-width: 200px;
-  min-width: 120px;
+  max-width: 20px;
+  min-width: 140px;
   width: 8%;
   height: 100%;
   position: fixed;
@@ -196,6 +197,8 @@ p {
   display: block;
   color: #4c414e;
   text-decoration: none;
+  text-align: left;
+  padding-left: 10px;
 }
 
 .navbar-item a:hover {
@@ -220,7 +223,7 @@ p {
   text-align: right;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 860px) {
   .flex-container {
     width: 80%;
     margin: 0px auto 40px;
