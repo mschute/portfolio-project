@@ -199,11 +199,7 @@ p {
 
 .flex-container {
   display: flex;
-  margin-bottom: 40px;
-}
-
-.footer-container {
-  margin-bottom: 20px;
+  margin: 40px 20px;
 }
 
 .footer-icon {
@@ -288,7 +284,7 @@ p {
 @media screen and (max-width: 860px) {
   .flex-container {
     width: 80%;
-    margin: 0px auto 40px;
+    margin: 40px auto;
   }
 
   .project-one {
