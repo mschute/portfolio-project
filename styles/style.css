@@ -16,6 +16,14 @@ body {
   background-color: #f2f4f3;
 }
 
+footer {
+  bottom: 0;
+  height: 50px;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
 h1 {
   font-family: "Merriweather", serif;
   color: #221d23;
@@ -75,6 +83,7 @@ p {
 
 .container-content {
   max-width: 80%;
+  min-height: 650px;
   padding-top: 96px;
   margin: 0px auto;
 }
@@ -192,6 +201,14 @@ p {
 .flex-container {
   display: flex;
   margin-bottom: 40px;
+}
+
+.footer-container {
+  margin-bottom: 20px;
+}
+
+.footer-icon {
+  padding: 5px;
 }
 
 .hero {
