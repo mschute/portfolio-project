@@ -172,11 +172,6 @@ p {
   display: block;
 }
 
-.fa,
-.fas {
-  padding-right: 5px;
-}
-
 .fa-bars {
   color: #4c414e;
   font-size: 24px;
@@ -238,6 +233,10 @@ p {
   margin: 0px;
   padding: 0px;
   overflow: auto;
+}
+
+.nav-icon {
+  padding-right: 5px;
 }
 
 .navbar-item {
@@ -324,7 +323,7 @@ p {
 }
 
 @media screen and (max-width: 700px) {
-  .fas {
+  .nav-icon {
     padding-right: 0px;
   }
 
