@@ -236,7 +236,14 @@ p {
   padding-left: 10px;
 }
 
-.navbar-item a:hover {
+.navbar-item a:hover,
+.navbar-item a:focus {
+  color: #221d23;
+  font-weight: bold;
+  transition: ease-in-out 100ms;
+}
+
+.navbar-item a.active {
   color: #221d23;
   font-weight: bold;
 }
