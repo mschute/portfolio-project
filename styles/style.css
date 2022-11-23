@@ -82,6 +82,10 @@ p {
   text-align: center;
 }
 
+.contact-linkedin {
+  margin-bottom: 0px;
+}
+
 .decoration-background {
   background-color: #707a52;
   display: block;
