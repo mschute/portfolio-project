@@ -9,6 +9,7 @@ a:focus {
   color: #707a52;
   text-decoration: none;
   font-weight: bolder;
+  transition: ease-in-out 100ms;
 }
 
 body {
