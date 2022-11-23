@@ -88,6 +88,10 @@ p {
   margin: 0px auto;
 }
 
+.contact-icon {
+  padding-right: 5px;
+}
+
 .contact-types {
   text-align: center;
 }
