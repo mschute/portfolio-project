@@ -289,6 +289,29 @@ p {
   margin-bottom: 120px;
 }
 
+.testimonial-container {
+  margin: auto;
+  max-width: 80%;
+}
+
+.testimonial-container .author-name {
+  text-align: right;
+}
+
+.testimonial-container .fa-quote-right {
+  float: right;
+}
+
+.testimonial-container p {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.testimonial-container .quotes {
+  color: var(--primary-text);
+  font-size: 32px;
+}
+
 @media screen and (max-width: 860px) {
   .flex-container {
     width: 80%;
