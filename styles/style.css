@@ -18,6 +18,7 @@ body {
 
 footer {
   text-align: center;
+  height: 40px;
 }
 
 h1 {
@@ -79,8 +80,8 @@ p {
 
 .container-content {
   max-width: 80%;
-  min-height: 650px;
-  padding-top: 96px;
+  min-height: 600px;
+  padding-top: 72px;
   margin: 0px auto;
 }
 
@@ -196,6 +197,7 @@ p {
 .flex-container {
   display: flex;
   margin: 40px 20px;
+  margin-bottom: 80px;
 }
 
 .footer-icon {
@@ -275,6 +277,7 @@ p {
 
 .project-summary-right {
   text-align: right;
+  margin-bottom: 120px;
 }
 
 @media screen and (max-width: 860px) {
