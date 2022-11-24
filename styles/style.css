@@ -44,14 +44,14 @@ h2 {
   font-size: 2rem;
 }
 
-h4 {
-  font-size: 1rem;
+h3 {
+  font-size: 1.25rem;
   font-weight: 200;
   color: var(--accent-text);
 }
 
 h2,
-h4 {
+h3 {
   padding-bottom: 16px;
   text-align: center;
   margin-top: 0.5rem;
@@ -59,7 +59,7 @@ h4 {
 }
 
 h2,
-h4,
+h3,
 p {
   font-family: "Roboto", sans-serif;
   color: var(--accent-text);
