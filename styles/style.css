@@ -28,6 +28,7 @@ body {
 footer {
   text-align: center;
   height: 40px;
+  margin-top: 40px;
 }
 
 h1 {
@@ -89,7 +90,7 @@ p {
 
 .container-content {
   max-width: 80%;
-  min-height: 600px;
+  min-height: 540px;
   padding-top: 72px;
   margin: 0px auto;
 }
