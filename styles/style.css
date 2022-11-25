@@ -94,6 +94,29 @@ p {
   overflow-x: hidden;
 }
 
+.contact-button {
+  background-color: var(--primary-green);
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  color: var(--background-color);
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  margin: 0px auto;
+  padding: 8px 8px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.contact-button:focus,
+.contact-button:hover {
+  background-color: var(--background-color);
+  color: var(--primary-green);
+  border: 1px solid var(--primary-green);
+  cursor: pointer;
+  transition: ease-in-out 100ms;
+}
+
 .container-content {
   max-width: 80%;
   min-height: 100%;
@@ -372,10 +395,11 @@ p {
 @media screen and (max-width: 700px) {
   .container-content {
     max-width: 90%;
-    padding-top: 80px;
+    padding-top: 40px;
   }
+
   h1 {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
 
   .nav-icon {
@@ -415,6 +439,7 @@ p {
 
 @media screen and (max-width: 460px) {
   .container-content {
+    padding-top: 80px;
     width: 100%;
   }
 
