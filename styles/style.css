@@ -25,6 +25,12 @@ body {
   background-color: var(--background-color);
 }
 
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
 footer {
   text-align: center;
   height: 40px;
@@ -90,9 +96,10 @@ p {
 
 .container-content {
   max-width: 80%;
-  min-height: 540px;
+  min-height: 100%;
   padding-top: 72px;
   margin: 0px auto;
+  margin-bottom: -40px;
 }
 
 .contact-icon {
@@ -290,6 +297,10 @@ p {
   margin-bottom: 120px;
 }
 
+.push {
+  height: 40px;
+}
+
 .testimonial-container {
   margin: auto;
   max-width: 80%;
@@ -361,6 +372,10 @@ p {
 @media screen and (max-width: 700px) {
   .container-content {
     max-width: 90%;
+    padding-top: 80px;
+  }
+  h1 {
+    padding-bottom: 40px;
   }
 
   .nav-icon {
@@ -399,24 +414,30 @@ p {
 }
 
 @media screen and (max-width: 460px) {
-  .decoration-background {
-    display: none;
-  }
-
   .container-content {
     width: 100%;
   }
 
-  .dropdown {
-    display: inline-block;
+  .decoration-background {
+    display: none;
   }
 
   .decoration-foreground {
     display: none;
   }
 
+  .dropdown {
+    display: inline-block;
+  }
+
   .hero {
     width: 100%;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    background-color: var(--background-color);
   }
 
   .navbar-option {
